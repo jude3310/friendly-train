@@ -56,8 +56,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.nav-link:hover
- {
+.nav-link:hover {
     background: rgba(255,255,255,0.2);
     transform: translateY(-2px);
 }
@@ -261,6 +260,9 @@ body {
 
 .footer-links li {
     margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .footer-links a {
@@ -289,6 +291,31 @@ body {
 
 .social-link:hover {
     background: rgba(255,255,255,0.2);
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter-form .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.copyright {
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 2rem;
 }
 
 /* Responsive Design */

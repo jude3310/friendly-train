@@ -1,0 +1,7 @@
+- [x] Update index.html footer to add Contact Info section (phone, email, address)
+- [x] Update index.html footer to add Newsletter Signup section (email input, subscribe button)
+- [x] Update index.html footer to add Copyright notice
+- [x] Update style.css footer-content to 4 columns
+- [x] Update style.css to style newsletter form
+- [x] Update style.css to style copyright
+- [ ] Test footer by opening index.html in browser

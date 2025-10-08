@@ -14,20 +14,20 @@
         <div class="container nav-container">
             <a href="index.html" class="logo">Grace Cosmetics</a>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="Services.html" class="nav-link">Services</a></li>
-                <li><a href="Contact.html" class="nav-link">Contact</a></li>
-                <li><a href="About.html" class="nav-link">About</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="container hero-content">
             <h1>Discover Your Natural Beauty</h1>
             <p>Premium cosmetics and skincare products crafted with love and attention to detail</p>
-            <a href="#products" class="btn">Shop Now</a>
+            <a href="#services" class="btn">Shop Now</a>
         </div>
     </section>
 
@@ -68,17 +68,74 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about">
+    <!-- Services Section -->
+    <section id="services" class="products">
         <div class="container">
-            <h2 class="section-title">Why Choose Grace Cosmetics?</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>We believe makeup and skincare are more than just products - they're a way to celebrate individuality, embrace self-care, and express who we truly are. Our mission is to help you feel confident and beautiful in your own skin.</p>
+            <h2 class="section-title">Our Services</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="images/bridal and weeding make up.jpg" alt="Bridal and Wedding Makeup" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Bridal and Wedding Makeup</h3>
+                        <p>Discover the magic of beauty at Grace Cosmetics</p>
+                    </div>
                 </div>
-                <div class="about-text">
-                    <p>From luxurious skincare essentials to vibrant makeup collections, every product in our shop is chosen with love, care, and attention to detail. We source only the finest ingredients and work with trusted brands to bring you the best in beauty.</p>
+                <div class="product-card">
+                    <img src="images/pedicure and manicure.jpg" alt="Manicure and Pedicure" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Manicure and Pedicure</h3>
+                        <p>Elevate your style with stunning, long-lasting manicures and pedicures tailored to your style</p>
+                    </div>
                 </div>
+                <div class="product-card">
+                    <img src="images/lash extension.jpg" alt="Lash Extension" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Lash Extension</h3>
+                        <p>Transform your look with fuller, longer, and darker lashes</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/skin care services.jpg" alt="Skin Care Services" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Skin Care Services</h3>
+                        <p>Our expert estheticians offer personalized treatments, including deep-cleansing facials, hydrating masks, exfoliation, and specialized care for concerns like acne, dryness, or aging. Using high-quality, skin-friendly products, we ensure your skin receives the best care for a healthy, radiant glow.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <form action="send_mail.php" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-content">
+            <img src="images/bakstore 2.jpg" alt="Grace Cosmetics Store" class="about-image">
+            <div>
+                <h2>Welcome to Grace Cosmetics, your one-stop destination for all things beauty!</h2>
+                <p>We’re passionate about empowering you to shine with confidence through our premium cosmetic and beauty services. Step into our vibrant space and explore a curated selection of high-quality, cruelty-free makeup, from bold lipsticks to flawless foundations, perfect for every skin tone and style.</p>
+                <p>Our expert team specializes in transformative lash extensions, stunning nail artistry, and rejuvenating skin care treatments tailored to your unique needs. Whether you’re after a glamorous makeover, intricate nail designs, or a radiant complexion, our skilled professionals are here to provide personalized care in a warm, welcoming atmosphere.</p>
+                <p>At Grace Cosmetics, we believe beauty is about celebrating you—visit us today and let your inner glow take center stage!</p>
             </div>
         </div>
     </section>
@@ -93,7 +150,32 @@
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul class="footer-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Services.html">Services</a></li>
-
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-phone"></i> (+234) 8115034756</li>
+                    <li><i class="fas fa-envelope"></i> info@Gracecosmetics.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 18 Beauty St, Beauty City, Beauty State 6547</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get special offers and updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2025 Grace Cosmetics. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>
